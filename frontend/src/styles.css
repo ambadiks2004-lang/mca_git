@@ -1,0 +1,191 @@
+/* Reset and body */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f0f2f5;
+  color: #333;
+}
+
+/* Container */
+div {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+  background-color: #fff;
+  padding: 12px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+nav a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+nav a.active {
+  background-color: #4CAF50;
+  color: white;
+  font-weight: 600;
+}
+
+/* Form */
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: center;
+}
+
+form input, form select {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  flex: 1 1 200px;
+  transition: all 0.3s ease;
+}
+
+form input:focus, form select:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+form button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+form button:hover {
+  background-color: #45a049;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+th, td {
+  padding: 14px 16px;
+  text-align: left;
+}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+  font-weight: 600;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+td button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+td button:hover {
+  background-color: #d32f2f;
+}
+
+/* Headings */
+h1, h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  form {
+    flex-direction: column;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+}
+
+/* Example snippet: you can use the full styles.css from previous message */
+body {
+  background-color: #f0f2f5;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 8px 16px;
+  margin-right: 10px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+th, td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
